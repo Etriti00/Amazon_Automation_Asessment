@@ -1,7 +1,7 @@
 class HomePage:
     def __init__(self, page):
         self.page = page
-        self.home_url = "https://www.amazon.com"
+        self.home_url = "https://www.amazon.de/"
         self.search_input = "#twotabsearchtextbox"
 
     def visit(self):

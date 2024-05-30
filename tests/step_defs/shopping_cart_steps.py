@@ -5,7 +5,7 @@ class HomePage:
         self.page = page
 
     def visit(self):
-        self.page.goto("https://www.amazon.com")
+        self.page.goto("https://www.amazon.de/")
 
     def search_for_product(self, product_name):
         self.page.fill('input[name="field-keywords"]', product_name)
@@ -30,7 +30,7 @@ class CartPage:
         self.page = page
 
     def visit(self):
-        self.page.goto("https://www.amazon.com/gp/cart/view.html")
+        self.page.goto("https://www.amazon.de/-/en/cart?ref_=sw_gtc")
 
     def update_quantity(self, new_quantity):
         self.page.select_option('#dropdown1', new_quantity)
